@@ -22,23 +22,50 @@
 
     .div2 {
       flex: 1;
-      padding: 10%;
+      padding: 5%;
       margin: 10px;
       color: rgb(249, 147, 188);
+      display: flex; 
+      flex-direction: column; 
+      align-items: center; 
+      justify-content: center; 
+      position: relative;
     }
 
-    
+    .div2 video {
+      width: 90%;
+      height: 80%;
+      object-fit: cover;
+      object-position: center;
+    }
+
     .raised-border {
       border: 1px solid #f6cee8;
-      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5); /* Raised effect */
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
       background-color: #f9a8cf; 
     }
-
-    
+    .raised-borderr {
+      border: 1px solid #0c2b6c;
+      box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
+      background-color: #2960c1; 
+    }
     .depressed-border {
       border: 1px solid #f6cee8;
-      box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5); /* Depressed effect */
+      box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
       background-color: #b8a8fd; 
+    }
+
+    .div2 h4 {
+      margin: 10px 0;
+    }
+
+    .div2 p {
+      margin: 10px 0;
+    }
+
+    .div2 a {
+      display: block;
+      margin-top: 10px;
     }
   </style>
 </head>
@@ -46,38 +73,38 @@
 <div class="container1">
   <div class="div1 raised-border"> 
     <h1>Silly little projects</h1>
-    <h4><p>Tic-Tac-Toe, Alien Agenda, </p></h4>
+    <h4><p>Tic-Tac-Toe, Bouncy Balls, Alien Agenda </p></h4>
   </div>
 </div>
 
 <div class="container2">
   <div class="div2 raised-border"> 
     <h2>Tic-Tac-Toe</h2>
-    <iframe><tictactore class="mp4"></tictactore></iframe>
-  <h4><p>Some information about Tic-Tac-Toe.</p></h4>
+    <video controls>
+      <source src="tictactore.mp4" type="video/mp4">
+    </video>
+    <h4><p>Tic-tac-toe is a game where two individuals using the same keyboard can play! They will be prompted to choose the index of the row (0,1,2) & then a column to pick their spot. If they make a move out of bounds, they'll be re-prompted to try again. It's <span style="color: rgb(122, 21, 177);">such</span> fun!</p></h4>
     <a href="https://github.com/annikasingh9/tictactoe.git">Repository!</a>
   </div>
 
   <div class="div2 depressed-border"> 
-    <h2>Alien Agenda</h2>
-    <iframe><tictactore class="mp4"></tictactore></iframe>
-    <h4><p>Some information about Alien Agenda.</p></h4>
-    <a href="https://github.com/annikasingh9/tictactoe.git">Repository!</a>
+    <h2>Bouncy Balls</h2>
+    <video controls>
+      <source src="bouncyballs.mp4" type="video/mp4">
+    </video>
+    <h4><p>Don't you sometimes just get sick and tired of competition and needing skills to do anything? Kick back and relax with bouncy balls, where all you do is use the arrow keys to collect balls. No risk, no reward. Stateless, simple, ideal.</p></h4>
+    <a href="https://github.com/annikasingh9/bouncyballs.git">Repository!</a>
   </div>
 </div>
 
 <div class="container3">
-  <div class="div2 depressed-border"> 
-    <iframe><game></game></iframe>
-    <h4><p>Some information about another game.</p></h4>
-    <a href="https://github.com/example/anothergame.git">Repository!</a>
-  </div>
-
-  <div class="div2 raised-border"> 
-    <h2>One More Game</h2>
-    <iframe><onemoregame></onemoregame></iframe>
-  <h4><p>Some information about one more game.</p></h4>
-    <a href="https://github.com/example/onemoregame.git">Repository!</a>
+  <div class="div2 raised-borderr"> 
+    <h2>Alien Agenda</h2>
+    <video controls>
+      <source src="alienagenda.mp4" type="video/mp4">
+    </video>
+    <h4><p>You are an alien spaceship, and the blue dots are planets soon to fall at your mercy. Hover over the planets to "conquer" them, and once you've hit 5, you spontaneously implode/disppear. You're a selfish imperialist and that's your karma. Also, avoid the flying asteroids to avoid dying instantly! </p></h4>
+    <a href="https://github.com/annikasingh9/collision-animation-thing.git">Repository!</a>
   </div>
 </div>
 
