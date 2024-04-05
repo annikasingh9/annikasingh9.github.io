@@ -9,11 +9,17 @@
 }
 
 h2 {
-    color: #3ad69a; 
     text-align: center; 
-
+    color: #ffffff;
 
 }
+
+h4 {
+    color:#ffffff;
+
+}
+
+
 body {
     background-color: #f8f9fa; 
     font-size: 16px;
