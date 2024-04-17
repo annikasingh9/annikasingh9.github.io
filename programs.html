@@ -4,7 +4,6 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>My Programs</title>
-  <link rel="stylesheet" href="style.css">
   <style>
     .container1,
     .container2,
@@ -46,16 +45,43 @@
       background-color: #f9a8cf; 
     }
     .raised-borderr {
-      border: 1px solid #0c2b6c;
+      border: 1px solid #2960c1;
       box-shadow: 0px 0px 10px 0px rgba(0,0,0,0.5);
-      background-color: #2960c1; 
+      background-color: #64b5f6; 
     }
     .depressed-border {
       border: 1px solid #f6cee8;
       box-shadow: inset 0px 0px 10px 0px rgba(0,0,0,0.5);
-      background-color: #b8a8fd; 
+      background-color: #f9a8cf; 
     }
+    .link {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px auto;
+            background-color: #64b5f6; 
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+            text-align: center;
+        }
+        .link:hover {
+            background-color: #1976d2; 
+    }
+    h4 {
+    color:#ffffff;
 
+    }
+    h2 {
+    color:#ffffff;
+
+    }
+    h1 {
+    color:#64b5f6;
+
+    }
     .div2 h4 {
       margin: 10px 0;
     }
@@ -72,9 +98,16 @@
   </style>
 </head>
 <body>
+  <nav>
+    <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="hobbies.html">Hobbies</a></li>
+        <li><a href="resume.html">Resume</a></li>
+    </ul>
+</nav>
 <div class="container1">
   <div class="div1 raised-border"> 
-    <h1>Silly little projects</h1>
+    <h1>Projects</h1>
     <h4><p>Tic-Tac-Toe, Bouncy Balls, Alien Agenda </p></h4>
   </div>
 </div>
@@ -86,7 +119,7 @@
       <source src="tictactore.mp4" type="video/mp4">
     </video>
     <h4><p>Tic-tac-toe is a game where two individuals using the same keyboard can play! They will be prompted to choose the index of the row (0,1,2) & then a column to pick their spot. If they make a move out of bounds, they'll be re-prompted to try again. It's <span style="color: rgb(122, 21, 177);">such</span> fun!</p></h4>
-    <a href="https://github.com/annikasingh9/tictactoe.git">Repository!</a>
+    <a href="https://github.com/annikasingh9/tictactoe.git" class="link">Repository!</a>
   </div>
 
   <div class="div2 depressed-border"> 
@@ -95,7 +128,7 @@
       <source src="bouncyballs.mp4" type="video/mp4">
     </video>
     <h4><p>Don't you sometimes just get sick and tired of competition and needing skills to do anything? Kick back and relax with bouncy balls, where all you do is use the arrow keys to collect balls. No risk, no reward. Stateless, simple, ideal.</p></h4>
-    <a href="https://github.com/annikasingh9/bouncyballs.git">Repository!</a>
+    <a href="https://github.com/annikasingh9/bouncyballs.git" class="link">Repository!</a>
   </div>
 </div>
 
@@ -106,7 +139,7 @@
       <source src="alienagenda.mp4" type="video/mp4">
     </video>
     <h4><p>You are an alien spaceship, and the blue dots are planets soon to fall at your mercy. Hover over the planets to "conquer" them, and once you've hit 5, you spontaneously implode/disppear. You're a selfish imperialist and that's your karma. Also, avoid the flying asteroids to avoid dying instantly! </p></h4>
-    <a href="https://github.com/annikasingh9/collision-animation-thing.git">Repository!</a>
+    <a href="https://github.com/annikasingh9/collision-animation-thing.git" class="link">Repository!</a>
     <a href="AnimationThing - ASingh.zip">Download game!</a>
 
   </div>

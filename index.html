@@ -1,18 +1,53 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Welcome</title>
-  <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Welcome Page</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #eba1ba; 
+            color: #6cb4d8;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .container {
+            text-align: center;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin-bottom: 20px;
+            color: #6cb4d8; 
+        }
+        .link {
+            display: block;
+            width: 200px;
+            padding: 15px;
+            margin: 10px auto;
+            background-color: #64b5f6; 
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-size: 1.2em;
+            transition: background-color 0.3s ease;
+        }
+        .link:hover {
+            background-color: #1976d2; 
+        }
+    </style>
 </head>
 <body>
-  <h1 id="main-title">Welcome to Our Website!</h1>
-  <p>We're glad you're here. Please select where you'd like to go:</p>
-  <ul>
-    <li><a href="#" class="film">Home</a></li>
-    <li><a href="#" class="film">About Us</a></li>
-    <li><a href="#" class="film">Contact</a></li>
-  </ul>
+    <div class="container">
+        <h1>Welcome!</h1>
+        <a href="resume.html" class="link">My Resume</a>
+        <a href="hobbies.html" class="link">My Hobbies</a>
+        <a href="programs.html" class="link">My Programs</a>
+        <img src="flower.webp" alt="Large Image" style="width: 50%; max-width: 800px; margin-top: 20px;">
+    </div>
 </body>
 </html>

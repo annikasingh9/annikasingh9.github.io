@@ -38,3 +38,42 @@ p {
     word-break: break-all; 
 
 }
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #eba1ba; /* Pink background */
+    color: #37474f; /* Dark blue text */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    text-align: center;
+}
+
+h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+    color: #1976d2; /* Blue heading */
+}
+
+.link {
+    display: block;
+    width: 200px;
+    padding: 15px;
+    margin: 10px auto;
+    background-color: #64b5f6; /* Light blue button */
+    color: white;
+    text-decoration: none;
+    border-radius: 25px;
+    font-size: 1.2em;
+    transition: background-color 0.3s ease;
+}
+
+.link:hover {
+    background-color: #1976d2; /* Darker blue on hover */
+}
