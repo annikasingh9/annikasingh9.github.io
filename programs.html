@@ -15,7 +15,7 @@
     .div1 {
       flex: 1;
       padding: 20px;
-      margin: 20px;
+      margin: 40px;
       border-radius: 10px;
     }
     
@@ -95,16 +95,36 @@
       display: block;
       margin-top: 10px;
     }
-  </style>
+
+    nav {
+        position: absolute;
+        top: 20px;
+        left: 20px;
+    }
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+    }
+    nav ul li {
+        display: inline;
+        margin: 0 10px;
+    }
+    nav ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+</style>
 </head>
 <body>
-  <nav>
-    <ul>
-        <li><a href="index.html">Home</a></li>
-        <li><a href="hobbies.html">Hobbies</a></li>
-        <li><a href="resume.html">Resume</a></li>
-    </ul>
-</nav>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
+
 <div class="container1">
   <div class="div1 raised-border"> 
     <h1>Projects</h1>

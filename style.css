@@ -1,12 +1,5 @@
-#main-title {
-    font-family: 'Times New Roman', Times, serif;
-}
 
-.film {
-    color: #007bff; 
-    font-family: 'Courier New', Courier, monospace;
-    text-decoration: none;
-}
+
 
 h2 {
     text-align: center; 
@@ -43,8 +36,8 @@ body {
     margin: 0;
     padding: 0;
     font-family: Arial, sans-serif;
-    background-color: #eba1ba; /* Pink background */
-    color: #37474f; /* Dark blue text */
+    background-color: #eba1ba; 
+    color: #37474f; 
     display: flex;
     justify-content: center;
     align-items: center;
@@ -58,7 +51,7 @@ body {
 h1 {
     font-size: 2.5em;
     margin-bottom: 20px;
-    color: #1976d2; /* Blue heading */
+    color: #64b5f6;
 }
 
 .link {
@@ -66,7 +59,7 @@ h1 {
     width: 200px;
     padding: 15px;
     margin: 10px auto;
-    background-color: #64b5f6; /* Light blue button */
+    background-color: #64b5f6; 
     color: white;
     text-decoration: none;
     border-radius: 25px;
@@ -75,5 +68,5 @@ h1 {
 }
 
 .link:hover {
-    background-color: #1976d2; /* Darker blue on hover */
+    background-color: #1976d2; 
 }

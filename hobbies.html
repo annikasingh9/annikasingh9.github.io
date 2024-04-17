@@ -1,18 +1,166 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <title>Fifth Period Program Demo</title>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Hobbies</title>
+    <link rel="stylesheet" href="style.css"> 
+    <style>
+        .hobby-container {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 200px; 
+        }
+        .hobby {
+            width: 45%;
+            margin: 20px 10px;
+            padding: 20px;
+            background-color: #ffffff;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            position: relative; 
+        }
+        .hobby img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-height: 200px; 
+        }
+        .prev-btn, .next-btn {
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(0, 0, 0, 0.5);
+            color: white;
+            border: none;
+            cursor: pointer;
+            padding: 10px;
+            z-index: 1;
+        }
+        .prev-btn {
+            left: 0;
+        }
+        .next-btn {
+            right: 0;
+        }
+        .gallery {
+            display: none;
+            position: relative;
+        }
+        .gallery.show {
+            display: block;
+        }
+        .gallery img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            margin-bottom: 10px;
+            max-height: 400px; 
+            display: none; 
+        }
+        .gallery img:first-child {
+            display: block; 
+        }
+        .view-gallery-btn {
+            margin-top: 10px;
+        }
+        nav {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            margin: 0;
+        }
+        nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        nav ul li a {
+            text-decoration: none;
+            color: #000;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="programs.html">Programs</a></li>
+            <li><a href="resume.html">Resume</a></li>
+        </ul>
+    </nav>
 
-    </head>
-   
-    <body>
-        <nav>
-            <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="about.html">About</a></li>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
-    </body>
+    <h1 id="main-title">My Hobbies</h1>
 
-</html>
+    <div class="hobby-container">
+        <div class="hobby">
+            <img src="IMG_1936.jpg" alt="Film Watching">
+            <h2>Dance</h2>
+            <p>Bharatnatyam dance has been a huge part of my life for 14 years. I perform recitals at the capital, religious events, and more! It connects me to my culture, and I teach it for free to young girls.</p>
+        </div>
+        <div class="hobby">
+            <img src="IMG_8147.jpg" alt="Writing">
+            <h2>Writing</h2>
+            <p>I've loved writing my whole life. It lets me express my thoughts and tell stories. I read a lot which inspires tons of what I write.</p>
+        </div>
+        <div class="hobby">
+            <img src="IMG_8530.JPG" alt="Poker">
+            <h2>Poker</h2>
+            <p>I'm disgustingly good at poker. Card games in general are my jam and go-to activity with friends if we're in a house and bored. I love strategizing and making complexities out of simple decks of cards.</p>
+        </div>
+        <div class="hobby">
+            <img src="IMG_9290.PNG" alt="Debate">
+            <h2>Debate</h2>
+            <p>Public speaking and debate are so much fun for me! I do it competitively, in my day-to-day life, and in the Youth and Government club. It teaches me so much about the world and helps me practice writing/speaking.</p>
+            <button class="view-gallery-btn" onclick="openGallery(this)">View Gallery</button>
+            <div id="gallery" class="gallery">
+                <img src="IMG_7422.jpg" alt="Debate Image 1" class="gallery-image">
+                <img src="D391AEBE-1A6F-412F-9DD5-2BF7F6F8D2BA.JPG" alt="Debate Image 2" class="gallery-image">
+                <img src="IMG_7487.jpg" alt="Debate Image 3" class="gallery-image">
+                <button class="prev-btn" onclick="prevImage()">&#10094;</button>
+                <button class="next-btn" onclick="nextImage()">&#10095;</button>
+
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function openGallery(button) {
+            const gallery = button.nextElementSibling;
+            gallery.classList.toggle('show');
+            showImage(0); 
+        }
+    
+        let currentIndex = 0;
+        const images = document.querySelectorAll('.gallery-image');
+    
+        function showImage(index) {
+            currentIndex = index; 
+            images.forEach(image => {
+                image.style.display = 'none';
+            });
+    
+            if (index < 0) {
+                currentIndex = images.length - 1;
+            } else if (index >= images.length) {
+                currentIndex = 0;
+            }
+    
+            images[currentIndex].style.display = 'block';
+        }
+    
+        function prevImage() {
+            showImage(currentIndex - 1);
+        }
+    
+        function nextImage() {
+            showImage(currentIndex + 1);
+        }
+    </script>
+</body
